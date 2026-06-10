@@ -1,4 +1,4 @@
-# vg_ansvar — Göteborg Natural Environment Responsibility Dashboard
+# vg_ansvar — Göteborg Natural Environment Responsibility Dashboard 
 
 A static, map-free, bilingual (EN/SV) responsibility dashboard for Göteborg's
 natural environment. It lays out — in plain HTML and CSS, with no build step and
