@@ -13,10 +13,18 @@
   <body>
     <div class="page-shell">
       <header class="hero">
+        <div class="lang-switch" role="group" aria-label="Language / Språk">
+          <span class="lang-switch-label">Language / Språk</span>
+          <div class="lang-buttons">
+            <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true" lang="en" aria-label="English">EN</button>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false" lang="sv" aria-label="Svenska">SV</button>
+          </div>
+        </div>
         <div class="hero-copy">
-          <p class="eyebrow">VG ansvar · local dashboard</p>
-          <h1>Natural environment responsibility in Göteborg</h1>
-          <p class="lede">
+          <p class="eyebrow" data-i18n="hero.eyebrow">VG ansvar · local dashboard</p>
+          <h1 data-i18n="hero.h1">Natural environment responsibility in Göteborg</h1>
+          <p class="lede" data-i18n="hero.lede">
             A map-free overview of who is accountable for protected nature, coast,
             forest, and water-connected habitats, with the requested
             <strong>responsible authority</strong>, responsible actors, daily maintenance,
@@ -25,21 +33,21 @@
         </div>
         <div class="hero-meta">
           <div class="status-card">
-            <span class="status-pill">No map in this release</span>
-            <p>Verified against official city, county, and university sources on 24 May 2026.</p>
+            <span class="status-pill" data-i18n="hero.pill">No map in this release</span>
+            <p data-i18n="hero.verified">Verified against official city, county, and university sources on 24 May 2026.</p>
           </div>
           <div class="metric-grid">
             <article class="metric-card">
               <span class="metric-value">4</span>
-              <span class="metric-label">area groups</span>
+              <span class="metric-label" data-i18n="metric.areas">area groups</span>
             </article>
             <article class="metric-card">
               <span class="metric-value">6</span>
-              <span class="metric-label">public institutions</span>
+              <span class="metric-label" data-i18n="metric.institutions">public institutions</span>
             </article>
             <article class="metric-card">
               <span class="metric-value">6</span>
-              <span class="metric-label">research units</span>
+              <span class="metric-label" data-i18n="metric.research">research units</span>
             </article>
           </div>
         </div>
@@ -49,10 +57,10 @@
         <section class="panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Institution snapshot</p>
-              <h2>Public institutions that show up across Göteborg's nature work</h2>
+              <p class="eyebrow" data-i18n="snapshot.eyebrow">Institution snapshot</p>
+              <h2 data-i18n="snapshot.h2">Public institutions that show up across Göteborg's nature work</h2>
             </div>
-            <p class="section-note">
+            <p class="section-note" data-i18n="snapshot.note">
               Older reserve pages may still mention <span class="inline-chip">Park- och naturförvaltningen</span>.
               Göteborgs Stad states that function was split into
               <span class="inline-chip">Stadsmiljöförvaltningen</span> and
@@ -62,28 +70,28 @@
 
           <div class="institution-grid">
             <article class="info-card">
-              <h3>Länsstyrelsen Västra Götaland</h3>
-              <p>Usually manages protected nature such as nature reserves and national parks, and remains a key authority for protected coastal and inland nature.</p>
+              <h3 data-i18n="inst.lst.name">Länsstyrelsen Västra Götaland (Västra Götaland County Administrative Board)</h3>
+              <p data-i18n="inst.lst.body">Usually manages protected nature such as nature reserves and national parks, and remains a key authority for protected coastal and inland nature.</p>
             </article>
             <article class="info-card">
-              <h3>Stadsbyggnadsnämnden</h3>
-              <p>Leads municipal reserve formation, boundaries, strategic prioritisation, and skötselplaner for new city reserves.</p>
+              <h3 data-i18n="inst.sbn.name">Stadsbyggnadsnämnden (City Planning Committee)</h3>
+              <p data-i18n="inst.sbn.body">Leads municipal reserve formation, boundaries, strategic prioritisation, and management plans for new city reserves.</p>
             </article>
             <article class="info-card">
-              <h3>Stadsmiljönämnden &amp; Stadsmiljöförvaltningen</h3>
-              <p>Manage the city's natural areas, public bathing sites, and much of the day-to-day upkeep of forests, trails, bridges, wetlands, and outdoor facilities.</p>
+              <h3 data-i18n="inst.smn.name">Stadsmiljönämnden &amp; Stadsmiljöförvaltningen (Urban Environment Committee &amp; Administration)</h3>
+              <p data-i18n="inst.smn.body">Manage the city's natural areas, public bathing sites, and much of the day-to-day upkeep of forests, trails, bridges, wetlands, and outdoor facilities.</p>
             </article>
             <article class="info-card">
-              <h3>Miljöförvaltningen</h3>
-              <p>Provides environmental supervision and co-defines the guidance used for discharges to water recipients and the stormwater network.</p>
+              <h3 data-i18n="inst.mf.name">Miljöförvaltningen (Environmental Administration)</h3>
+              <p data-i18n="inst.mf.body">Provides environmental supervision and co-defines the guidance used for discharges to water recipients and the stormwater network.</p>
             </article>
             <article class="info-card">
-              <h3>Kretslopp och vatten</h3>
-              <p>Works with Miljöförvaltningen on water quality target values and supports planning around dagvatten, ditches, and watercourses.</p>
+              <h3 data-i18n="inst.kov.name">Kretslopp och vatten (Recycling and Water)</h3>
+              <p data-i18n="inst.kov.body">Works with Miljöförvaltningen on water quality target values and supports planning around stormwater, ditches, and watercourses.</p>
             </article>
             <article class="info-card">
-              <h3>Exploateringsförvaltningen</h3>
-              <p>Owns and develops city agricultural land and urban farming programmes that intersect with reserve-edge landscapes and biodiversity work.</p>
+              <h3 data-i18n="inst.ef.name">Exploateringsförvaltningen (Land Development Administration)</h3>
+              <p data-i18n="inst.ef.body">Owns and develops city agricultural land and urban farming programmes that intersect with reserve-edge landscapes and biodiversity work.</p>
             </article>
           </div>
         </section>
@@ -91,10 +99,10 @@
         <section class="panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Responsibility matrix</p>
-              <h2>Area-by-area accountability</h2>
+              <p class="eyebrow" data-i18n="matrix.eyebrow">Responsibility matrix</p>
+              <h2 data-i18n="matrix.h2">Area-by-area accountability</h2>
             </div>
-            <p class="section-note">
+            <p class="section-note" data-i18n="matrix.note">
               This view stays at area-type level. It does not try to assign parcel-level accountability.
             </p>
           </div>
@@ -102,128 +110,128 @@
           <div class="matrix-grid">
             <article class="matrix-card">
               <div class="matrix-head">
-                <span class="tag">Protected nature</span>
-                <h3>Nature reserves &amp; protected landscapes</h3>
+                <span class="tag" data-i18n="m1.tag">Protected nature</span>
+                <h3 data-i18n="m1.title">Nature reserves &amp; protected landscapes</h3>
               </div>
               <dl class="fact-list">
                 <div>
-                  <dt>Responsible authority</dt>
-                  <dd>Länsstyrelsen Västra Götaland for most protected nature, with Göteborgs Stad acting as the public authority and manager for municipal reserves.</dd>
+                  <dt data-i18n="lbl.authority">Responsible authority</dt>
+                  <dd data-i18n="m1.authority">Länsstyrelsen Västra Götaland for most protected nature, with Göteborgs Stad acting as the public authority and manager for municipal reserves.</dd>
                 </div>
                 <div>
-                  <dt>Responsible actors</dt>
-                  <dd>Stadsbyggnadsnämnden handles reserve formation, boundaries, and skötselplaner; Stadsmiljönämnden and Stadsmiljöförvaltningen manage and develop reserves after formation; some reserve pages name Göteborgs Stad directly as naturvårdsförvaltare.</dd>
+                  <dt data-i18n="lbl.actors">Responsible actors</dt>
+                  <dd data-i18n="m1.actors">Stadsbyggnadsnämnden handles reserve formation, boundaries, and management plans; Stadsmiljönämnden and Stadsmiljöförvaltningen manage and develop reserves after formation; some reserve pages name Göteborgs Stad directly as the nature conservation manager.</dd>
                 </div>
                 <div>
-                  <dt>Daily maintenance</dt>
-                  <dd>Skötselplan-led work includes gallring, wetland restoration, upkeep of trails and bridges, and follow-up so reserve goals are actually delivered on the ground.</dd>
+                  <dt data-i18n="lbl.maintenance">Daily maintenance</dt>
+                  <dd data-i18n="m1.maintenance">Management-plan-led work includes thinning, wetland restoration, upkeep of trails and bridges, and follow-up so reserve goals are actually delivered on the ground.</dd>
                 </div>
                 <div>
-                  <dt>Research units</dt>
-                  <dd>Gothenburg Global Biodiversity Centre (GGBC) and the Department of Biological and Environmental Sciences support biodiversity, conservation, and ecosystem-service knowledge.</dd>
+                  <dt data-i18n="lbl.research">Research units</dt>
+                  <dd data-i18n="m1.research">Gothenburg Global Biodiversity Centre (GGBC) and the Department of Biological and Environmental Sciences support biodiversity, conservation, and ecosystem-service knowledge.</dd>
                 </div>
               </dl>
               <p class="source-line">
-                Sources:
-                <a href="https://www.lansstyrelsen.se/vastra-gotaland/natur-och-landsbygd/skyddad-natur.html">Länsstyrelsen protected nature</a>,
-                <a href="https://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/105eeaa12634aa6bc1258d5a00300e84/%24FILE/15.%20A%20Hemstallan%20till%20kommunfullmaktige%20om%20andring%20i%20reglementen%20for%20stadsmiljonamnden%20och%20stadsbyggnadsnamnden%20gallande%20foreskrifter%20for%20naturreservat.pdf">city reserve roles</a>,
-                <a href="https://www.lansstyrelsen.se/vastra-gotaland/besoksmal/naturreservat/stora-amundo-och-billdals-skargard.html">Stora Amundö reserve page</a>
+                <span data-i18n="src.prefix">Sources:</span>
+                <a data-i18n="m1.src1" href="https://www.lansstyrelsen.se/vastra-gotaland/natur-och-landsbygd/skyddad-natur.html">Länsstyrelsen protected nature</a>,
+                <a data-i18n="m1.src2" href="https://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/105eeaa12634aa6bc1258d5a00300e84/%24FILE/15.%20A%20Hemstallan%20till%20kommunfullmaktige%20om%20andring%20i%20reglementen%20for%20stadsmiljonamnden%20och%20stadsbyggnadsnamnden%20gallande%20foreskrifter%20for%20naturreservat.pdf">city reserve roles</a>,
+                <a data-i18n="m1.src3" href="https://www.lansstyrelsen.se/vastra-gotaland/besoksmal/naturreservat/stora-amundo-och-billdals-skargard.html">Stora Amundö reserve page</a>
               </p>
             </article>
 
             <article class="matrix-card">
               <div class="matrix-head">
-                <span class="tag">Marine edge</span>
-                <h3>Coast, archipelago &amp; marine areas</h3>
+                <span class="tag" data-i18n="m2.tag">Marine edge</span>
+                <h3 data-i18n="m2.title">Coast, archipelago &amp; marine areas</h3>
               </div>
               <dl class="fact-list">
                 <div>
-                  <dt>Responsible authority</dt>
-                  <dd>Göteborgs Stad for municipal bathing sites and many city-managed coastal sites, Länsstyrelsen for protected coastal nature, and Miljöförvaltningen with Kretslopp och vatten for water-quality guidance.</dd>
+                  <dt data-i18n="lbl.authority">Responsible authority</dt>
+                  <dd data-i18n="m2.authority">Göteborgs Stad for municipal bathing sites and many city-managed coastal sites, Länsstyrelsen for protected coastal nature, and Miljöförvaltningen with Kretslopp och vatten for water-quality guidance.</dd>
                 </div>
                 <div>
-                  <dt>Responsible actors</dt>
-                  <dd>Stadsmiljönämnden owns the municipal bathing-site mandate, Stadsmiljöförvaltningen runs the operational service, and Miljöförvaltningen plus Kretslopp och vatten set the guidance used for polluted water releases to recipients and networks.</dd>
+                  <dt data-i18n="lbl.actors">Responsible actors</dt>
+                  <dd data-i18n="m2.actors">Stadsmiljönämnden owns the municipal bathing-site mandate, Stadsmiljöförvaltningen runs the operational service, and Miljöförvaltningen plus Kretslopp och vatten set the guidance used for polluted water releases to recipients and networks.</dd>
                 </div>
                 <div>
-                  <dt>Daily maintenance</dt>
-                  <dd>During bathing season the city keeps toilets, bridges, lifebuoys, and containers in place, staffs larger sites with attendants, cleans most bathing sites daily, and can increase maintenance from 15 May when demand rises.</dd>
+                  <dt data-i18n="lbl.maintenance">Daily maintenance</dt>
+                  <dd data-i18n="m2.maintenance">During bathing season the city keeps toilets, bridges, lifebuoys, and containers in place, staffs larger sites with attendants, cleans most bathing sites daily, and can increase maintenance from 15 May when demand rises.</dd>
                 </div>
                 <div>
-                  <dt>Research units</dt>
-                  <dd>The Department of Marine Sciences, Centrum för Hav och samhälle, and Havsmiljöinstitutet provide marine science, cross-sector collaboration, and ecosystem-based governance support.</dd>
+                  <dt data-i18n="lbl.research">Research units</dt>
+                  <dd data-i18n="m2.research">The Department of Marine Sciences, the Centre for Sea and Society, and the Swedish Institute for the Marine Environment provide marine science, cross-sector collaboration, and ecosystem-based governance support.</dd>
                 </div>
               </dl>
               <p class="source-line">
-                Sources:
-                <a href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/897cd37d29432304c125897f003e0dda/%24FILE/2.2.5_20230405.pdf">badplats responsibility and service</a>,
-                <a href="https://tekniskhandbok.goteborg.se/2-forutsattningar/2h-dagvatten-skyfall-och-hogt-vatten/2ha-dagvatten/">daywater roles</a>,
-                <a href="https://www.gu.se/om-universitetet/hitta-organisation/institutionen-for-marina-vetenskaper">marine sciences</a>,
-                <a href="https://www.gu.se/hav-samhalle">Centrum för Hav och samhälle</a>,
-                <a href="https://www.havsmiljoinstitutet.se/">Havsmiljöinstitutet</a>
+                <span data-i18n="src.prefix">Sources:</span>
+                <a data-i18n="m2.src1" href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/897cd37d29432304c125897f003e0dda/%24FILE/2.2.5_20230405.pdf">bathing-site responsibility and service</a>,
+                <a data-i18n="m2.src2" href="https://tekniskhandbok.goteborg.se/2-forutsattningar/2h-dagvatten-skyfall-och-hogt-vatten/2ha-dagvatten/">stormwater roles</a>,
+                <a data-i18n="m2.src3" href="https://www.gu.se/om-universitetet/hitta-organisation/institutionen-for-marina-vetenskaper">Department of Marine Sciences</a>,
+                <a data-i18n="m2.src4" href="https://www.gu.se/hav-samhalle">Centre for Sea and Society</a>,
+                <a data-i18n="m2.src5" href="https://www.havsmiljoinstitutet.se/">Swedish Institute for the Marine Environment</a>
               </p>
             </article>
 
             <article class="matrix-card">
               <div class="matrix-head">
-                <span class="tag">Land systems</span>
-                <h3>Forests, urban natural areas &amp; recreation corridors</h3>
+                <span class="tag" data-i18n="m3.tag">Land systems</span>
+                <h3 data-i18n="m3.title">Forests, urban natural areas &amp; recreation corridors</h3>
               </div>
               <dl class="fact-list">
                 <div>
-                  <dt>Responsible authority</dt>
-                  <dd>Stadsmiljönämnden through Stadsmiljöförvaltningen is the main public manager for the city's forests, natural areas, and outdoor public-space systems.</dd>
+                  <dt data-i18n="lbl.authority">Responsible authority</dt>
+                  <dd data-i18n="m3.authority">Stadsmiljönämnden through Stadsmiljöförvaltningen is the main public manager for the city's forests, natural areas, and outdoor public-space systems.</dd>
                 </div>
                 <div>
-                  <dt>Responsible actors</dt>
-                  <dd>Stadsmiljöförvaltningen has the city's broad public-space and natural-area mandate and runs work that must balance recreation, biodiversity, and cultural landscape values.</dd>
+                  <dt data-i18n="lbl.actors">Responsible actors</dt>
+                  <dd data-i18n="m3.actors">Stadsmiljöförvaltningen has the city's broad public-space and natural-area mandate and runs work that must balance recreation, biodiversity, and cultural landscape values.</dd>
                 </div>
                 <div>
-                  <dt>Daily maintenance</dt>
-                  <dd>Work is area-specific, guided by mapped tasks and site instructions, with each area's natural conditions and public use shaping how maintenance is carried out with minimal disturbance.</dd>
+                  <dt data-i18n="lbl.maintenance">Daily maintenance</dt>
+                  <dd data-i18n="m3.maintenance">Work is area-specific, guided by mapped tasks and site instructions, with each area's natural conditions and public use shaping how maintenance is carried out with minimal disturbance.</dd>
                 </div>
                 <div>
-                  <dt>Research units</dt>
-                  <dd>BioEnv's plant ecology and environmental science work covers forests, land use, and urban vegetation, while GGBC links biodiversity science to restoration and practice.</dd>
+                  <dt data-i18n="lbl.research">Research units</dt>
+                  <dd data-i18n="m3.research">The Department of Biological and Environmental Sciences' plant ecology and environmental science work covers forests, land use, and urban vegetation, while GGBC links biodiversity science to restoration and practice.</dd>
                 </div>
               </dl>
               <p class="source-line">
-                Sources:
-                <a href="https://tekniskhandbok.goteborg.se/13-byggnation/13r-skotsel-av-vegetationsytor/13rb-skotsel-i-naturomraden/">natural-area maintenance</a>,
-                <a href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/85263b78f682fa6dc1258a66004f697e/%24FILE/231124_24%20B.pdf">stadsmiljö remit</a>,
-                <a href="https://www.gu.se/en/biological-environmental-sciences/our-research/more-about-our-research-areas/plant-ecology-physiology-environmental-science">PEPES</a>,
-                <a href="https://www.gu.se/en/ggbc-global-biodiversity">GGBC</a>
+                <span data-i18n="src.prefix">Sources:</span>
+                <a data-i18n="m3.src1" href="https://tekniskhandbok.goteborg.se/13-byggnation/13r-skotsel-av-vegetationsytor/13rb-skotsel-i-naturomraden/">natural-area maintenance</a>,
+                <a data-i18n="m3.src2" href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/85263b78f682fa6dc1258a66004f697e/%24FILE/231124_24%20B.pdf">urban environment remit</a>,
+                <a data-i18n="m3.src3" href="https://www.gu.se/en/biological-environmental-sciences/our-research/more-about-our-research-areas/plant-ecology-physiology-environmental-science">Plant ecology, physiology &amp; environmental science (PEPES)</a>,
+                <a data-i18n="m3.src4" href="https://www.gu.se/en/ggbc-global-biodiversity">Gothenburg Global Biodiversity Centre (GGBC)</a>
               </p>
             </article>
 
             <article class="matrix-card">
               <div class="matrix-head">
-                <span class="tag">Freshwater link</span>
-                <h3>Lakes, streams, wetlands &amp; stormwater-linked habitats</h3>
+                <span class="tag" data-i18n="m4.tag">Freshwater link</span>
+                <h3 data-i18n="m4.title">Lakes, streams, wetlands &amp; stormwater-linked habitats</h3>
               </div>
               <dl class="fact-list">
                 <div>
-                  <dt>Responsible authority</dt>
-                  <dd>Göteborgs Stad is responsible for meeting water environmental quality norms, with Miljöförvaltningen and Kretslopp och vatten defining core guidance and Stadsmiljöförvaltningen managing the operational public systems.</dd>
+                  <dt data-i18n="lbl.authority">Responsible authority</dt>
+                  <dd data-i18n="m4.authority">Göteborgs Stad is responsible for meeting water environmental quality norms, with Miljöförvaltningen and Kretslopp och vatten defining core guidance and Stadsmiljöförvaltningen managing the operational public systems.</dd>
                 </div>
                 <div>
-                  <dt>Responsible actors</dt>
-                  <dd>Miljöförvaltningen and Kretslopp och vatten set target values for polluted-water releases; Stadsmiljöförvaltningen maintains stormwater facilities and the connected public realm that influences downstream habitats.</dd>
+                  <dt data-i18n="lbl.actors">Responsible actors</dt>
+                  <dd data-i18n="m4.actors">Miljöförvaltningen and Kretslopp och vatten set target values for polluted-water releases; Stadsmiljöförvaltningen maintains stormwater facilities and the connected public realm that influences downstream habitats.</dd>
                 </div>
                 <div>
-                  <dt>Daily maintenance</dt>
-                  <dd>Dagvattenanläggningar need regular drift and maintenance with explicit drift instructions so the treatment and delay functions keep working for streams, lakes, wetlands, and coastal receivers.</dd>
+                  <dt data-i18n="lbl.maintenance">Daily maintenance</dt>
+                  <dd data-i18n="m4.maintenance">Stormwater facilities need regular operation and maintenance with explicit operating instructions so the treatment and retention functions keep working for streams, lakes, wetlands, and coastal receivers.</dd>
                 </div>
                 <div>
-                  <dt>Research units</dt>
-                  <dd>The Department of Biological and Environmental Sciences is the clearest research match here because its work spans land, freshwater, and marine environments.</dd>
+                  <dt data-i18n="lbl.research">Research units</dt>
+                  <dd data-i18n="m4.research">The Department of Biological and Environmental Sciences is the clearest research match here because its work spans land, freshwater, and marine environments.</dd>
                 </div>
               </dl>
               <p class="source-line">
-                Sources:
-                <a href="https://tekniskhandbok.goteborg.se/2-forutsattningar/2h-dagvatten-skyfall-och-hogt-vatten/2ha-dagvatten/">water norms and guidance</a>,
-                <a href="https://tekniskhandbok.goteborg.se/14-drift-och-underhall/14c-dagvatten-skyfall-och-hogvatten/14ca-dagvatten/">stormwater maintenance</a>,
-                <a href="https://www.gu.se/en/biological-environmental-sciences/our-research">BioEnv research areas</a>
+                <span data-i18n="src.prefix">Sources:</span>
+                <a data-i18n="m4.src1" href="https://tekniskhandbok.goteborg.se/2-forutsattningar/2h-dagvatten-skyfall-och-hogt-vatten/2ha-dagvatten/">water norms and guidance</a>,
+                <a data-i18n="m4.src2" href="https://tekniskhandbok.goteborg.se/14-drift-och-underhall/14c-dagvatten-skyfall-och-hogvatten/14ca-dagvatten/">stormwater maintenance</a>,
+                <a data-i18n="m4.src3" href="https://www.gu.se/en/biological-environmental-sciences/our-research">Department of Biological and Environmental Sciences research areas</a>
               </p>
             </article>
           </div>
@@ -232,44 +240,44 @@
         <section class="panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Research network</p>
-              <h2>Units worth tracking by area type</h2>
+              <p class="eyebrow" data-i18n="research.eyebrow">Research network</p>
+              <h2 data-i18n="research.h2">Units worth tracking by area type</h2>
             </div>
-            <p class="section-note">
+            <p class="section-note" data-i18n="research.note">
               These are not regulators. They are the research organisations most directly aligned with the area types above.
             </p>
           </div>
 
           <div class="research-grid">
             <article class="research-card">
-              <h3>Institutionen för marina vetenskaper</h3>
-              <p>Core science unit for coast, archipelago, marine conservation, and marine spatial questions.</p>
-              <span class="chip-row">Coast · Marine reserves · Havsmiljö</span>
+              <h3 data-i18n="r.marine.name">Department of Marine Sciences</h3>
+              <p data-i18n="r.marine.body">Core science unit for coast, archipelago, marine conservation, and marine spatial questions.</p>
+              <span class="chip-row" data-i18n="r.marine.chips">Coast · Marine reserves · Marine environment</span>
             </article>
             <article class="research-card">
-              <h3>Centrum för Hav och samhälle</h3>
-              <p>Connects marine research to authorities, organisations, industry, and public dialogue.</p>
-              <span class="chip-row">Coast · Collaboration · Policy bridge</span>
+              <h3 data-i18n="r.sea.name">Centre for Sea and Society</h3>
+              <p data-i18n="r.sea.body">Connects marine research to authorities, organisations, industry, and public dialogue.</p>
+              <span class="chip-row" data-i18n="r.sea.chips">Coast · Collaboration · Policy bridge</span>
             </article>
             <article class="research-card">
-              <h3>Havsmiljöinstitutet</h3>
-              <p>Produces synthesis and knowledge support for ecosystem-based marine governance.</p>
-              <span class="chip-row">Coast · Governance · Water quality</span>
+              <h3 data-i18n="r.hmi.name">Swedish Institute for the Marine Environment</h3>
+              <p data-i18n="r.hmi.body">Produces synthesis and knowledge support for ecosystem-based marine governance.</p>
+              <span class="chip-row" data-i18n="r.hmi.chips">Coast · Governance · Water quality</span>
             </article>
             <article class="research-card">
-              <h3>Department of Biological and Environmental Sciences</h3>
-              <p>Spans land, freshwater, and marine environments, which makes it the broadest match for forests, streams, and mixed habitats.</p>
-              <span class="chip-row">Forest · Freshwater · Mixed habitats</span>
+              <h3 data-i18n="r.bioenv.name">Department of Biological and Environmental Sciences</h3>
+              <p data-i18n="r.bioenv.body">Spans land, freshwater, and marine environments, which makes it the broadest match for forests, streams, and mixed habitats.</p>
+              <span class="chip-row" data-i18n="r.bioenv.chips">Forest · Freshwater · Mixed habitats</span>
             </article>
             <article class="research-card">
-              <h3>PEPES</h3>
-              <p>Studies forests, land use, urban vegetation, climate impacts, and ecological change on land.</p>
-              <span class="chip-row">Forest · Urban nature · Vegetation</span>
+              <h3 data-i18n="r.pepes.name">Plant ecology, physiology &amp; environmental science (PEPES)</h3>
+              <p data-i18n="r.pepes.body">Studies forests, land use, urban vegetation, climate impacts, and ecological change on land.</p>
+              <span class="chip-row" data-i18n="r.pepes.chips">Forest · Urban nature · Vegetation</span>
             </article>
             <article class="research-card">
-              <h3>GGBC</h3>
-              <p>Connects biodiversity researchers and public actors around conservation, restoration, and ecosystem services.</p>
-              <span class="chip-row">Reserves · Biodiversity · Restoration</span>
+              <h3 data-i18n="r.ggbc.name">Gothenburg Global Biodiversity Centre (GGBC)</h3>
+              <p data-i18n="r.ggbc.body">Connects biodiversity researchers and public actors around conservation, restoration, and ecosystem services.</p>
+              <span class="chip-row" data-i18n="r.ggbc.chips">Reserves · Biodiversity · Restoration</span>
             </article>
           </div>
         </section>
@@ -277,35 +285,229 @@
         <section class="panel panel-sources">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Source register</p>
-              <h2>Official references used in this version</h2>
+              <p class="eyebrow" data-i18n="reg.eyebrow">Source register</p>
+              <h2 data-i18n="reg.h2">Official references used in this version</h2>
             </div>
-            <p class="section-note">Every link below is publicly accessible and was used to ground the dashboard content.</p>
+            <p class="section-note" data-i18n="reg.note">Every link below is publicly accessible and was used to ground the dashboard content.</p>
           </div>
 
           <div class="source-columns">
             <ul class="source-list">
-              <li><a href="https://www.lansstyrelsen.se/vastra-gotaland/natur-och-landsbygd/skyddad-natur.html">Länsstyrelsen Västra Götaland: Skyddad natur</a></li>
-              <li><a href="https://www.lansstyrelsen.se/vastra-gotaland/besoksmal/naturreservat/stora-amundo-och-billdals-skargard.html">Länsstyrelsen: Stora Amundö och Billdals skärgård</a></li>
-              <li><a href="https://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/105eeaa12634aa6bc1258d5a00300e84/%24FILE/15.%20A%20Hemstallan%20till%20kommunfullmaktige%20om%20andring%20i%20reglementen%20for%20stadsmiljonamnden%20och%20stadsbyggnadsnamnden%20gallande%20foreskrifter%20for%20naturreservat.pdf">Göteborgs Stad: reserve roles and management split</a></li>
-              <li><a href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/85263b78f682fa6dc1258a66004f697e/%24FILE/231124_24%20B.pdf">Göteborgs Stad: Stadsmiljöförvaltningen remit</a></li>
-              <li><a href="https://wp-nystart.stadsmiljo.goteborg.se/newsletters/nyhetsbrev-nystart-trafikkontoret-och-park-och-naturforvaltningens-entreprenorer/">Göteborgs Stad: 2023 organisation change note</a></li>
-              <li><a href="https://tekniskhandbok.goteborg.se/13-byggnation/13r-skotsel-av-vegetationsytor/13rb-skotsel-i-naturomraden/">Teknisk Handbok: Skötsel i naturområden</a></li>
+              <li><a data-i18n="reg.l1" href="https://www.lansstyrelsen.se/vastra-gotaland/natur-och-landsbygd/skyddad-natur.html">Länsstyrelsen Västra Götaland: Protected nature</a></li>
+              <li><a data-i18n="reg.l2" href="https://www.lansstyrelsen.se/vastra-gotaland/besoksmal/naturreservat/stora-amundo-och-billdals-skargard.html">Länsstyrelsen: Stora Amundö and Billdal archipelago reserve</a></li>
+              <li><a data-i18n="reg.l3" href="https://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/105eeaa12634aa6bc1258d5a00300e84/%24FILE/15.%20A%20Hemstallan%20till%20kommunfullmaktige%20om%20andring%20i%20reglementen%20for%20stadsmiljonamnden%20och%20stadsbyggnadsnamnden%20gallande%20foreskrifter%20for%20naturreservat.pdf">Göteborgs Stad: reserve roles and management split</a></li>
+              <li><a data-i18n="reg.l4" href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/85263b78f682fa6dc1258a66004f697e/%24FILE/231124_24%20B.pdf">Göteborgs Stad: Stadsmiljöförvaltningen remit</a></li>
+              <li><a data-i18n="reg.l5" href="https://wp-nystart.stadsmiljo.goteborg.se/newsletters/nyhetsbrev-nystart-trafikkontoret-och-park-och-naturforvaltningens-entreprenorer/">Göteborgs Stad: 2023 organisation change note</a></li>
+              <li><a data-i18n="reg.l6" href="https://tekniskhandbok.goteborg.se/13-byggnation/13r-skotsel-av-vegetationsytor/13rb-skotsel-i-naturomraden/">Teknisk Handbok: Maintenance in natural areas</a></li>
             </ul>
             <ul class="source-list">
-              <li><a href="https://tekniskhandbok.goteborg.se/2-forutsattningar/2h-dagvatten-skyfall-och-hogt-vatten/2ha-dagvatten/">Teknisk Handbok: Dagvatten</a></li>
-              <li><a href="https://tekniskhandbok.goteborg.se/14-drift-och-underhall/14c-dagvatten-skyfall-och-hogvatten/14ca-dagvatten/">Teknisk Handbok: Drift och underhåll för dagvatten</a></li>
-              <li><a href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/897cd37d29432304c125897f003e0dda/%24FILE/2.2.5_20230405.pdf">Göteborgs Stad: badplats responsibility and service guarantee context</a></li>
-              <li><a href="https://www.gu.se/om-universitetet/hitta-organisation/institutionen-for-marina-vetenskaper">Göteborgs universitet: Institutionen för marina vetenskaper</a></li>
-              <li><a href="https://www.gu.se/hav-samhalle">Göteborgs universitet: Centrum för Hav och samhälle</a></li>
-              <li><a href="https://www.havsmiljoinstitutet.se/">Havsmiljöinstitutet</a></li>
-              <li><a href="https://www.gu.se/en/biological-environmental-sciences/our-research">BioEnv: research areas</a></li>
-              <li><a href="https://www.gu.se/en/biological-environmental-sciences/our-research/more-about-our-research-areas/plant-ecology-physiology-environmental-science">BioEnv: PEPES</a></li>
-              <li><a href="https://www.gu.se/en/ggbc-global-biodiversity">GGBC</a></li>
+              <li><a data-i18n="reg.l7" href="https://tekniskhandbok.goteborg.se/2-forutsattningar/2h-dagvatten-skyfall-och-hogt-vatten/2ha-dagvatten/">Teknisk Handbok: Stormwater</a></li>
+              <li><a data-i18n="reg.l7b" href="https://tekniskhandbok.goteborg.se/14-drift-och-underhall/14c-dagvatten-skyfall-och-hogvatten/14ca-dagvatten/">Teknisk Handbok: Operation and maintenance for stormwater</a></li>
+              <li><a data-i18n="reg.l8" href="https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/897cd37d29432304c125897f003e0dda/%24FILE/2.2.5_20230405.pdf">Göteborgs Stad: bathing-site responsibility and service guarantee context</a></li>
+              <li><a data-i18n="reg.l9" href="https://www.gu.se/om-universitetet/hitta-organisation/institutionen-for-marina-vetenskaper">University of Gothenburg: Department of Marine Sciences</a></li>
+              <li><a data-i18n="reg.l10" href="https://www.gu.se/hav-samhalle">University of Gothenburg: Centre for Sea and Society</a></li>
+              <li><a data-i18n="reg.l11" href="https://www.havsmiljoinstitutet.se/">Swedish Institute for the Marine Environment</a></li>
+              <li><a data-i18n="reg.l12" href="https://www.gu.se/en/biological-environmental-sciences/our-research">University of Gothenburg: Department of Biological and Environmental Sciences research areas</a></li>
+              <li><a data-i18n="reg.l13" href="https://www.gu.se/en/biological-environmental-sciences/our-research/more-about-our-research-areas/plant-ecology-physiology-environmental-science">University of Gothenburg: Plant ecology, physiology &amp; environmental science (PEPES)</a></li>
+              <li><a data-i18n="reg.l_ggbc" href="https://www.gu.se/en/ggbc-global-biodiversity">University of Gothenburg: Gothenburg Global Biodiversity Centre (GGBC)</a></li>
             </ul>
           </div>
         </section>
       </main>
     </div>
+
+    <script>
+      (function () {
+        var SV = {
+          "hero.eyebrow": "VG ansvar · lokal panel",
+          "hero.h1": "Ansvar för naturmiljön i Göteborg",
+          "hero.lede": "En kartfri översikt över vem som är ansvarig för skyddad natur, kust, skog och vattenanknutna livsmiljöer, med efterfrågad <strong>ansvarig myndighet</strong>, ansvariga aktörer, daglig skötsel och forskningsenheter.",
+          "hero.pill": "Ingen karta i den här versionen",
+          "hero.verified": "Verifierad mot officiella källor från stad, län och universitet den 24 maj 2026.",
+          "metric.areas": "områdesgrupper",
+          "metric.institutions": "offentliga institutioner",
+          "metric.research": "forskningsenheter",
+
+          "snapshot.eyebrow": "Institutionsöversikt",
+          "snapshot.h2": "Offentliga institutioner som återkommer i Göteborgs naturarbete",
+          "snapshot.note": "Äldre reservatssidor kan fortfarande nämna <span class=\"inline-chip\">Park- och naturförvaltningen</span>. Göteborgs Stad uppger att den funktionen delades upp i <span class=\"inline-chip\">Stadsmiljöförvaltningen</span> och <span class=\"inline-chip\">Exploateringsförvaltningen</span> i omorganisationen 2023.",
+
+          "inst.lst.name": "Länsstyrelsen Västra Götaland",
+          "inst.lst.body": "Förvaltar vanligtvis skyddad natur som naturreservat och nationalparker och är fortsatt en central myndighet för skyddad kust- och inlandsnatur.",
+          "inst.sbn.name": "Stadsbyggnadsnämnden",
+          "inst.sbn.body": "Leder kommunal reservatsbildning, gränser, strategisk prioritering och skötselplaner för nya kommunala reservat.",
+          "inst.smn.name": "Stadsmiljönämnden &amp; Stadsmiljöförvaltningen",
+          "inst.smn.body": "Förvaltar stadens naturområden, offentliga badplatser och en stor del av den dagliga skötseln av skogar, leder, broar, våtmarker och friluftsanläggningar.",
+          "inst.mf.name": "Miljöförvaltningen",
+          "inst.mf.body": "Utövar miljötillsyn och är med och definierar den vägledning som används för utsläpp till vattenrecipienter och dagvattennätet.",
+          "inst.kov.name": "Kretslopp och vatten",
+          "inst.kov.body": "Arbetar tillsammans med Miljöförvaltningen kring riktvärden för vattenkvalitet och stödjer planering kring dagvatten, diken och vattendrag.",
+          "inst.ef.name": "Exploateringsförvaltningen",
+          "inst.ef.body": "Äger och utvecklar kommunal jordbruksmark och stadsodlingsprogram som tangerar landskap i reservatens utkanter och arbete med biologisk mångfald.",
+
+          "matrix.eyebrow": "Ansvarsmatris",
+          "matrix.h2": "Ansvar område för område",
+          "matrix.note": "Den här vyn håller sig på områdestypsnivå. Den försöker inte fördela ansvar på fastighetsnivå.",
+
+          "lbl.authority": "Ansvarig myndighet",
+          "lbl.actors": "Ansvariga aktörer",
+          "lbl.maintenance": "Daglig skötsel",
+          "lbl.research": "Forskningsenheter",
+          "src.prefix": "Källor:",
+
+          "m1.tag": "Skyddad natur",
+          "m1.title": "Naturreservat &amp; skyddade landskap",
+          "m1.authority": "Länsstyrelsen Västra Götaland för merparten av den skyddade naturen, medan Göteborgs Stad är ansvarig myndighet och förvaltare för kommunala reservat.",
+          "m1.actors": "Stadsbyggnadsnämnden hanterar reservatsbildning, gränser och skötselplaner; Stadsmiljönämnden och Stadsmiljöförvaltningen förvaltar och utvecklar reservaten efter bildandet; vissa reservatssidor anger Göteborgs Stad direkt som naturvårdsförvaltare.",
+          "m1.maintenance": "Skötselplanestyrt arbete omfattar gallring, våtmarksrestaurering, underhåll av leder och broar samt uppföljning så att reservatens mål faktiskt uppnås i praktiken.",
+          "m1.research": "Göteborgs centrum för globala biodiversitetsstudier (GGBC) och Institutionen för biologi och miljövetenskap bidrar med kunskap om biologisk mångfald, naturvård och ekosystemtjänster.",
+          "m1.src1": "Länsstyrelsen skyddad natur",
+          "m1.src2": "kommunala reservatsroller",
+          "m1.src3": "Stora Amundö reservatssida",
+
+          "m2.tag": "Marin zon",
+          "m2.title": "Kust, skärgård &amp; marina områden",
+          "m2.authority": "Göteborgs Stad för kommunala badplatser och många kommunalt förvaltade kustområden, Länsstyrelsen för skyddad kustnatur och Miljöförvaltningen tillsammans med Kretslopp och vatten för vägledning om vattenkvalitet.",
+          "m2.actors": "Stadsmiljönämnden äger uppdraget för kommunala badplatser, Stadsmiljöförvaltningen sköter den operativa verksamheten och Miljöförvaltningen samt Kretslopp och vatten fastställer vägledningen för utsläpp av förorenat vatten till recipienter och nät.",
+          "m2.maintenance": "Under badsäsongen håller staden toaletter, bryggor, livbojar och behållare på plats, bemannar större badplatser med tillsynspersonal, städar de flesta badplatser dagligen och kan öka skötseln från 15 maj när efterfrågan ökar.",
+          "m2.research": "Institutionen för marina vetenskaper, Centrum för Hav och samhälle och Havsmiljöinstitutet bidrar med marin vetenskap, sektorsövergripande samverkan och stöd för ekosystembaserad förvaltning.",
+          "m2.src1": "badplatsansvar och service",
+          "m2.src2": "dagvattenroller",
+          "m2.src3": "Institutionen för marina vetenskaper",
+          "m2.src4": "Centrum för Hav och samhälle",
+          "m2.src5": "Havsmiljöinstitutet",
+
+          "m3.tag": "Landsystem",
+          "m3.title": "Skogar, urbana naturområden &amp; rekreationsstråk",
+          "m3.authority": "Stadsmiljönämnden genom Stadsmiljöförvaltningen är den huvudsakliga offentliga förvaltaren av stadens skogar, naturområden och offentliga utemiljöer.",
+          "m3.actors": "Stadsmiljöförvaltningen har stadens breda uppdrag för offentliga ytor och naturområden och driver arbete som måste balansera rekreation, biologisk mångfald och kulturlandskapets värden.",
+          "m3.maintenance": "Arbetet är områdesspecifikt, styrs av kartlagda uppgifter och platsinstruktioner, där varje områdes naturförhållanden och allmänhetens användning formar hur skötseln utförs med minimal störning.",
+          "m3.research": "Institutionen för biologi och miljövetenskaps arbete inom växtekologi och miljövetenskap omfattar skogar, markanvändning och urban vegetation, medan GGBC kopplar forskning om biologisk mångfald till restaurering och praktik.",
+          "m3.src1": "skötsel av naturområden",
+          "m3.src2": "stadsmiljöuppdrag",
+          "m3.src3": "Växtekologi, -fysiologi &amp; miljövetenskap (PEPES)",
+          "m3.src4": "Göteborgs centrum för globala biodiversitetsstudier (GGBC)",
+
+          "m4.tag": "Sötvatten",
+          "m4.title": "Sjöar, vattendrag, våtmarker &amp; dagvattenkopplade livsmiljöer",
+          "m4.authority": "Göteborgs Stad ansvarar för att uppfylla miljökvalitetsnormerna för vatten, där Miljöförvaltningen och Kretslopp och vatten definierar den centrala vägledningen och Stadsmiljöförvaltningen sköter de operativa offentliga systemen.",
+          "m4.actors": "Miljöförvaltningen och Kretslopp och vatten fastställer riktvärden för utsläpp av förorenat vatten; Stadsmiljöförvaltningen underhåller dagvattenanläggningar och den anslutna offentliga miljön som påverkar nedströms livsmiljöer.",
+          "m4.maintenance": "Dagvattenanläggningar behöver regelbunden drift och underhåll med tydliga driftinstruktioner så att renings- och fördröjningsfunktionerna fortsätter att fungera för vattendrag, sjöar, våtmarker och kustrecipienter.",
+          "m4.research": "Institutionen för biologi och miljövetenskap är den tydligaste forskningsmatchningen här eftersom dess arbete spänner över land-, sötvattens- och havsmiljöer.",
+          "m4.src1": "vattennormer och vägledning",
+          "m4.src2": "dagvattenunderhåll",
+          "m4.src3": "Institutionen för biologi och miljövetenskap forskningsområden",
+
+          "research.eyebrow": "Forskningsnätverk",
+          "research.h2": "Enheter värda att följa per områdestyp",
+          "research.note": "Detta är inte tillsynsmyndigheter. Det är de forskningsorganisationer som tydligast hör ihop med områdestyperna ovan.",
+
+          "r.marine.name": "Institutionen för marina vetenskaper",
+          "r.marine.body": "Central vetenskaplig enhet för kust, skärgård, marint naturskydd och marin fysisk planering.",
+          "r.marine.chips": "Kust · Marina reservat · Havsmiljö",
+          "r.sea.name": "Centrum för Hav och samhälle",
+          "r.sea.body": "Kopplar marin forskning till myndigheter, organisationer, näringsliv och dialog med allmänheten.",
+          "r.sea.chips": "Kust · Samverkan · Policybrygga",
+          "r.hmi.name": "Havsmiljöinstitutet",
+          "r.hmi.body": "Tar fram syntes och kunskapsstöd för ekosystembaserad havsförvaltning.",
+          "r.hmi.chips": "Kust · Förvaltning · Vattenkvalitet",
+          "r.bioenv.name": "Institutionen för biologi och miljövetenskap",
+          "r.bioenv.body": "Spänner över land-, sötvattens- och havsmiljöer, vilket gör den till den bredaste matchningen för skogar, vattendrag och blandade livsmiljöer.",
+          "r.bioenv.chips": "Skog · Sötvatten · Blandade livsmiljöer",
+          "r.pepes.name": "Växtekologi, -fysiologi &amp; miljövetenskap (PEPES)",
+          "r.pepes.body": "Studerar skogar, markanvändning, urban vegetation, klimatpåverkan och ekologisk förändring på land.",
+          "r.pepes.chips": "Skog · Urban natur · Vegetation",
+          "r.ggbc.name": "Göteborgs centrum för globala biodiversitetsstudier (GGBC)",
+          "r.ggbc.body": "Kopplar samman forskare inom biologisk mångfald och offentliga aktörer kring naturvård, restaurering och ekosystemtjänster.",
+          "r.ggbc.chips": "Reservat · Biologisk mångfald · Restaurering",
+
+          "reg.eyebrow": "Källregister",
+          "reg.h2": "Officiella referenser som använts i den här versionen",
+          "reg.note": "Varje länk nedan är offentligt tillgänglig och har använts för att underbygga innehållet i panelen.",
+          "reg.l1": "Länsstyrelsen Västra Götaland: Skyddad natur",
+          "reg.l2": "Länsstyrelsen: Stora Amundö och Billdals skärgård",
+          "reg.l3": "Göteborgs Stad: reservatsroller och uppdelning av förvaltning",
+          "reg.l4": "Göteborgs Stad: Stadsmiljöförvaltningens uppdrag",
+          "reg.l5": "Göteborgs Stad: notis om organisationsförändring 2023",
+          "reg.l6": "Teknisk Handbok: Skötsel i naturområden",
+          "reg.l7": "Teknisk Handbok: Dagvatten",
+          "reg.l7b": "Teknisk Handbok: Drift och underhåll för dagvatten",
+          "reg.l8": "Göteborgs Stad: badplatsansvar och kontext för servicegaranti",
+          "reg.l9": "Göteborgs universitet: Institutionen för marina vetenskaper",
+          "reg.l10": "Göteborgs universitet: Centrum för Hav och samhälle",
+          "reg.l11": "Havsmiljöinstitutet",
+          "reg.l12": "Göteborgs universitet: Institutionen för biologi och miljövetenskap forskningsområden",
+          "reg.l13": "Göteborgs universitet: Växtekologi, -fysiologi &amp; miljövetenskap (PEPES)",
+          "reg.l_ggbc": "Göteborgs universitet: Göteborgs centrum för globala biodiversitetsstudier (GGBC)"
+        };
+
+        var META = {
+          title: {
+            en: "Göteborg Natural Environment Responsibility Dashboard",
+            sv: "Göteborg – panel för ansvar för naturmiljön"
+          },
+          desc: {
+            en: "A local dashboard of public institutions responsible for natural environment areas in Göteborg, including reserve, coast, forest and water-related responsibilities.",
+            sv: "En lokal panel över offentliga institutioner som ansvarar för naturmiljöns områden i Göteborg, inklusive ansvar för reservat, kust, skog och vattenrelaterade frågor."
+          }
+        };
+
+        var STORAGE_KEY = "vg-ansvar-lang";
+        var nodes = document.querySelectorAll("[data-i18n]");
+        var metaDesc = document.querySelector('meta[name="description"]');
+        var buttons = document.querySelectorAll(".lang-btn");
+
+        // Capture the authored English copy from the DOM so it is never duplicated.
+        var EN = {};
+        nodes.forEach(function (node) {
+          var key = node.getAttribute("data-i18n");
+          if (!(key in EN)) {
+            EN[key] = node.innerHTML;
+          }
+        });
+
+        function apply(lang) {
+          nodes.forEach(function (node) {
+            var key = node.getAttribute("data-i18n");
+            var val = lang === "sv" ? SV[key] : EN[key];
+            if (val != null) {
+              node.innerHTML = val;
+            }
+          });
+          document.documentElement.lang = lang;
+          document.title = META.title[lang] || META.title.en;
+          if (metaDesc) {
+            metaDesc.setAttribute("content", META.desc[lang] || META.desc.en);
+          }
+          buttons.forEach(function (btn) {
+            var active = btn.getAttribute("data-lang") === lang;
+            btn.classList.toggle("is-active", active);
+            btn.setAttribute("aria-pressed", active ? "true" : "false");
+          });
+        }
+
+        function setLang(lang) {
+          if (lang !== "sv") {
+            lang = "en";
+          }
+          try {
+            localStorage.setItem(STORAGE_KEY, lang);
+          } catch (e) {}
+          apply(lang);
+        }
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            setLang(btn.getAttribute("data-lang"));
+          });
+        });
+
+        var saved = null;
+        try {
+          saved = localStorage.getItem(STORAGE_KEY);
+        } catch (e) {}
+        apply(saved === "sv" ? "sv" : "en");
+      })();
+    </script>
   </body>
 </html>

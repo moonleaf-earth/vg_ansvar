@@ -95,6 +95,65 @@ a:hover {
   padding: 1.8rem;
 }
 
+.lang-switch {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem 0.85rem;
+}
+
+.lang-switch-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lang-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.lang-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  color: var(--deep-sea);
+}
+
+.lang-btn.is-active {
+  background: rgba(15, 93, 103, 0.14);
+  color: var(--deep-sea);
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--sea);
+  outline-offset: 2px;
+}
+
+.lang-sep {
+  color: var(--line);
+  font-weight: 700;
+}
+
 .hero-copy h1,
 .panel h2,
 .matrix-card h3,
